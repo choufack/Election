@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegionController;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +14,15 @@ use App\Http\Controllers\RegionController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get ('/token',function(Request $request){
+    $token = $request->session()->token();
+    $token = csrf_token();
+});
 
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get("/region-create", [RegionController::class,"index"]);
 Route::post("/region-insert", [RegionController::class,"store"]);
 Auth::routes();
