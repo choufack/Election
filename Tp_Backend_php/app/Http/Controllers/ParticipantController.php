@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use \App\Models\region;
+use \App\Models\Participant;
 use Illuminate\Support\Facades\DB;
 
 
-class RegionController extends Controller
+class ParticipantController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,7 +18,7 @@ class RegionController extends Controller
     {
         //
         $nom ="CHOUFACK";
-        return view("formulaire_region");
+        return view("participants_region");
     }
 
     /**
@@ -28,8 +28,8 @@ class RegionController extends Controller
      */
     public function create()
     {
-        $liste = region::all();
-        return view("liste_region",compact('liste'));
+        $liste = Participant::all();
+        return view("participants_region",compact('liste'));
     }
 
     /**
@@ -45,7 +45,7 @@ class RegionController extends Controller
             'Label' => $request->input('label'),
             
         ]);
-        return view('formulaire_region')->with('success', "Account successfully registered.");
+        return view('participants_region')->with('success', "Account successfully registered.");
         
     }
 

@@ -22,7 +22,10 @@
     </head>
     <body class="antialiased">
         <h1> My first projet</h1>
-        <a href="/region-create"><button> Region</button></a>
+        <a href={{route('region.index')}}><button> Region</button></a>
+        <a href={{route('region.create')}}><button> Liste</button></a>
+        <a href={{route('participant.create')}}><button> Ajout Partcipant</button></a>
+
         
     </body>
 </html>

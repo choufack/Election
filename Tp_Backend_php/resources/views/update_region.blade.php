@@ -60,13 +60,14 @@
     <h1>Ajout de region</h1>
 
     <div>
-      <form method="POST" action={{route('region.save')}}>
+      <form method="POST" action={{route('region.edit')}}>
         @csrf
 
         <label for="fname">Name</label>
-        <input type="text" id="fname" name="label" required>
+        <input type="hidden" value= "{{$reg->id}}" id="fid" name="id" required>
+        <input type="text" value="{{$reg->label}}" id="fname" name="label"  required >
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="submit">
       </form>
     </div>
 
