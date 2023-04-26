@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use \App\Models\Region;
+use \App\Models\Participant;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,5 +22,7 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        Region:: factory(20) -> create();
+        Participant:: factory(30) -> create();
     }
 }

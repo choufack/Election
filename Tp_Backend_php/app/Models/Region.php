@@ -8,6 +8,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 /**
  * Class Region
@@ -21,6 +22,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Region extends Model
 {
+	use HasFactory;
 	protected $table = 'region';
 	public $timestamps = false;
 
