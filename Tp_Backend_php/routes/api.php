@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\REST\ParticipantController;
+use App\Http\Controllers\REST\RegionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,5 @@ use App\Http\Controllers\REST\ParticipantController;
 //   return $request->user();
 // });
 Route::apiResource ("participants", ParticipantController::class);
+Route::apiResource ("region", ParticipantController::class);
 Route::get("onOff{id}",[ParticipantController::class, "onOff"]);

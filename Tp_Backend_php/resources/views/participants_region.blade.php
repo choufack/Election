@@ -27,26 +27,27 @@
             <section>
                 <div class="form-row"> <input type="text" class="form-control" placeholder="CNI"> </div>
                 <div class="form-row"> <input type="text" class="form-control" placeholder="Name"> </div>
+                <div class="form-row"> <input type="text" class="form-control" placeholder="Prenom"> </div>
+                <div class="form-row"> <input type="text" class="form-control" placeholder="Sexe"> </div>
+                <div class="form-row"> <input type="text" class="form-control" placeholder="Status"> </div>
                 <div class="form-row"> <input type="text" class="form-control" placeholder="Age"> </div>
                 <div class="form-row"> <input type="text" class="form-control" placeholder="Login"> </div>
+                <div class="form-row"> <input type="text" class="form-control" placeholder="Password"> </div>
+                <div class="form-row"> <input type="text" class="form-control" placeholder="Etat"> </div>
                 <div class="form-row"> <input type="text" class="form-control" placeholder="Email"> </div>
                 <div class="form-row"> <input type="text" class="form-control" placeholder="Phone number"> </div>
-                <div class="form-row"> <input type="text" class="form-control" placeholder="Street address"> </div>
+                <div class="form-row"> <input type="text" class="form-control" placeholder="Region"> </div>
             </section> <!-- SECTION 2 -->
             <h4></h4>
             <section>
+                
                 <div class="form-row"> <input type="text" class="form-control" placeholder="country"> </div>
-                <div class="form-row"> <input type="text" class="form-control" placeholder="zip code"> </div>
                 <div class="form-row" style="margin-bottom: 18px"> <textarea name="" id="" class="form-control" placeholder="Any order note about delivery or special offer" style="height: 108px"></textarea> </div>
             </section> <!-- SECTION 3 -->
             <h4></h4>
-            
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
-                    <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
-                    <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 " />
-                </svg>
-                <p class="success">Registration placed successfully. Your order will be dispacted soon</p>
             </section>
+            <a class="btn btn-primary" routerlink="/region_formulaire">AJOUTER</a>
+            <p class="success">Registration placed successfully. Your order will be dispacted soon</p>
         </div>
     </form>
 </div>

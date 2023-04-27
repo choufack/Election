@@ -1,4 +1,4 @@
-export class region{
+export class Region{
     public id ?: number;
     public label ?: String;
 

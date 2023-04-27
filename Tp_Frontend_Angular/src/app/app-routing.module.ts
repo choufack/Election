@@ -4,8 +4,7 @@ import { RegionComponent } from './Components/region/region.component';
 
 const routes: Routes = [
   {
-    path:"region_formulaire",
-    component: RegionComponent
+    path:"region_formulaire",component: RegionComponent
   },
 ];
 
